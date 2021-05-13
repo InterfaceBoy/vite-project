@@ -3,8 +3,8 @@ import {
   createWebHashHistory,
   RouteRecordRaw
 } from 'vue-router';
-import Home from '@/views/home.vue';
-import Vuex from '@/views/vuex.vue';
+import Home from '@/views/Home.vue';
+
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -15,12 +15,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/vuex',
     name: 'Vuex',
-    component: Vuex
+    component: () => import('@/views/Vuex.vue') 
   },
   {
     path: '/axios',
     name: 'Axios',
-    component: () => import('@/views/axios.vue') // 懒加载组件
+    component: () => import('@/views/Axios.vue') // 懒加载组件
   }
 ]
 
