@@ -6,8 +6,16 @@ import store from './store/index'
 import ElementPlus from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
 
-// 全局组件注册
-import "@/components";
+ 
 
+const AppNode = createApp(App);
 
-createApp(App).use(ElementPlus,router,store).mount('#app')
+import "@/components/globalComp"; 
+// 全局组件组册
+AppNode.component('HelloWorld',)
+
+// 生态引入
+AppNode.use(ElementPlus)
+AppNode.use(store)
+AppNode.use(router)
+AppNode.mount('#app')
