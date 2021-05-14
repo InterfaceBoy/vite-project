@@ -1,7 +1,7 @@
 <template>
   <h1>我是第一个首页</h1>
   <div>头像</div>
-  <router-link to="/vuex">跳转链接</router-link>
+  <router-link to="/vuex">跳转状态链接</router-link>
 </template>
 
 <script>
