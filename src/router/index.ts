@@ -10,17 +10,24 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: "首页",
+      access: [] // 未来用于权限过滤
+    },
+    children:[
+       
+    ]
   },
   {
-    path: '/vuex',
-    name: 'Vuex',
-    component: () => import('@/views/Vuex.vue') 
+    path: '/css',
+    name: 'Css',
+    component: () => import('@/views/Css/css.vue') 
   },
   {
-    path: '/axios',
-    name: 'Axios',
-    component: () => import('@/views/Axios.vue') // 懒加载组件
+    path: '/html',
+    name: 'Html',
+    component: () => import('@/views/Html/html.vue') // 懒加载组件
   }
 ]
 

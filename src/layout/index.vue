@@ -48,10 +48,16 @@ export default {
   // 计算属性
   computed: {},
   // 侦听器
-  watch: {},
+  watch: {
+    $route: {
+      immediate: true,
+      handler(route) {
+        console.log(route);
+      },
+    },
+  },
   // 组件方法
   methods: {},
-  // 以下是生命周期钩子   注：没用到的钩子请自行删除
   /**
    * 在实例初始化之后，组件属性计算之前，如data属性等
    */

@@ -1,11 +1,11 @@
 <template>
-  <div>Home</div>
+  <div>grid</div>
 </template>
 
 <script>
 export default {
   // 组件名称
-  name: "Home",
+  name: "demo",
   // 组件参数 接收来自父组件的数据
   props: {
     cs: {

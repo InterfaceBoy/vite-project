@@ -1,5 +1,5 @@
 <template>
-  <div>我是状态管理</div>
+  <div>es6</div>
 </template>
 
 <script>
